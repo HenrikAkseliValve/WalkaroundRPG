@@ -8,22 +8,22 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class RPGmain extends StateBasedGame{
 	public static void main(String[] args){
-      AppGameContainer appgc;
-	  try{
-	    appgc=new AppGameContainer(new RPGmain());
-	    appgc.setDisplayMode(1265,500,false);
-		appgc.setTargetFrameRate(60);
-		appgc.start();
-	  }
-	  catch(SlickException e){
-		Sys.alert("Display error", e.getMessage());
-	  }
-      System.exit(0);
+		AppGameContainer appgc;
+		try{
+			appgc=new AppGameContainer(new RPGmain());
+			appgc.setDisplayMode(1265,500,false);
+			appgc.setTargetFrameRate(60);
+			appgc.start();
+		}
+		catch(SlickException e){
+			Sys.alert("Display error", e.getMessage());
+		}
+		System.exit(0);
 	}
-    RPGmain(){
-	  super("FunRPG");
-	  addState(new RoomTitle(0));
-	  addState(new World(3));
+	RPGmain(){
+		super("FunRPG");
+		addState(new RoomTitle(0));
+		addState(new World(3));
 	}
 	@Override
 	public void initStatesList(GameContainer gc) throws SlickException {
