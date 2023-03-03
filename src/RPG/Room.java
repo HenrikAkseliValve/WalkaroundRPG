@@ -28,6 +28,7 @@ public abstract class Room extends BasicGameState{
 	/**Players on room*/
 	public static Player players[] = new Player[2];
 	/**Section that is drawn. (x,y,z)*/
+	@SuppressWarnings("unchecked")
 	private TreeMap<Integer,EntityObject>[][] drawing=new TreeMap[50][2];
 	/**Constant numbers of point were drawing[a][1] has last layout*/
 	private int[] layoutSize=new int[50];
