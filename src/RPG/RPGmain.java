@@ -27,7 +27,7 @@ public class RPGmain extends StateBasedGame{
 	}
 	@Override
 	public void initStatesList(GameContainer gc) throws SlickException {
-	  enterState(3);
+		enterState(3);
 	}
 }
 /* Henrik Valve
