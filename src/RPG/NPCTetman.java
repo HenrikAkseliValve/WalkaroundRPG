@@ -5,29 +5,29 @@ import org.newdawn.slick.Graphics;
 
 public class NPCTetman extends Entity{
 
-    NPCTetman(int _x,int _y){
-      super(_x,_y,3);
-      addBehavior(new BehaviorLookAround(this,200),0);
-      addBehavior(new BehaviorWalk(this,320),1);
-      addBehavior(new BehaviorWalkAtPoint(this),2);
-    }
-    
-    @Override
-    public void init(GameContainer gameC,Room room){
-      super.init(gameC, room);
-      drew=getAnimation(0);
-    }
-    
-    @Override
-    public void draw(Graphics g){
-//    	drew.draw(x,y-39);
-    	g.drawAnimation(drew, x, y-39);
-    }
-    
-    @Override
-    public SpriteSet getSet(){
-      return SpriteSet.Tetman;
-    }
+	NPCTetman(int _x,int _y){
+		super(_x,_y,3);
+		addBehavior(new BehaviorLookAround(this,200),0);
+		addBehavior(new BehaviorWalk(this,320),1);
+		addBehavior(new BehaviorWalkAtPoint(this),2);
+	}
+
+	@Override
+	public void init(GameContainer gameC,Room room){
+		super.init(gameC, room);
+		drew=getAnimation(0);
+	}
+
+	@Override
+	public void draw(Graphics g){
+//		drew.draw(x,y-39);
+		g.drawAnimation(drew, x, y-39);
+	}
+
+	@Override
+	public SpriteSet getSet(){
+		return SpriteSet.Tetman;
+	}
 }
 /* Henrik Valve
  * 04.11.2012

@@ -11,13 +11,13 @@ public class SpriteSetBlack extends SpriteSet {
 
 	@Override
 	public void load() {
-	  try{   
-	    sprites[0]=new Image("resources/Black30X20.png");
-	    sprites[1]=sprites[0].getScaledCopy(10f);
-	  }
-	  catch(SlickException e){
-		e.printStackTrace();		  
-	  }
+		try{
+			sprites[0]=new Image("resources/Black30X20.png");
+			sprites[1]=sprites[0].getScaledCopy(10f);
+		}
+		catch(SlickException e){
+			e.printStackTrace();
+		}
 	}
 
 }

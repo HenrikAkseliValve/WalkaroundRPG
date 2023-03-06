@@ -11,14 +11,14 @@ public class SpriteSetGroundZeroFloor extends SpriteSet {
 
 	@Override
 	public void load() {
-	  try{  
-	    sprites[0]=new Image("resources/FloorGroundZero2.png");
-	    sprites[1]=new Image("resources/FloorGroundZero3.png");
-	    sprites[2]=new Image("resources/FloorGroundZero4.png");
-	  }
-	  catch(SlickException e){
-	    e.printStackTrace();	  
-	  }
+		try{  
+			sprites[0]=new Image("resources/FloorGroundZero2.png");
+			sprites[1]=new Image("resources/FloorGroundZero3.png");
+			sprites[2]=new Image("resources/FloorGroundZero4.png");
+		}
+		catch(SlickException e){
+			e.printStackTrace();
+		}
 	}
 
 }

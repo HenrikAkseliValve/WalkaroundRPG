@@ -5,11 +5,11 @@ import org.newdawn.slick.Graphics;
 
 public class LayoutGroundZeroFloor1 extends Layout {
 	public LayoutGroundZeroFloor1(){
-	  this(-1,-1,-1);
+		this(-1,-1,-1);
 	}
 	
 	public LayoutGroundZeroFloor1(int layoutX,int layoutY,int index){
-	  this(layoutX*30f,layoutY*20f,index);
+		this(layoutX*30f,layoutY*20f,index);
 	}
 	
 	public LayoutGroundZeroFloor1(float _x, float _y, int _index) {
@@ -23,14 +23,14 @@ public class LayoutGroundZeroFloor1 extends Layout {
 
 	@Override
 	public void init(GameContainer gameC,Room room){
-	  super.init(gameC, room);
-	  drew = getSprite(index);	
+		super.init(gameC, room);
+		drew = getSprite(index);	
 	}
 
 	@Override
 	public void draw(Graphics g){
-//	  drew.draw(x,y);
-	  g.drawImage(drew, x, y);
+//	drew.draw(x,y);
+		g.drawImage(drew, x, y);
 	}
 
 	@Override

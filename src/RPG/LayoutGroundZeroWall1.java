@@ -5,24 +5,23 @@ import org.newdawn.slick.Graphics;
 
 public class LayoutGroundZeroWall1 extends Layout {
 	public LayoutGroundZeroWall1(int layoutX,int layoutY,int index){
-		  this(layoutX*30f,layoutY*20f,index);
-		}
+		this(layoutX*30f,layoutY*20f,index);
+	}
 	
 	public LayoutGroundZeroWall1(float _x, float _y,int _index){
-	  super(_x, _y,true,_index);
-	  
+		super(_x, _y,true,_index);
 	}
 
 	@Override
 	public void init(GameContainer gameC,Room room) {
-	  super.init(gameC, room);
-	  drew = getSprite(index);	
+		super.init(gameC, room);
+		drew = getSprite(index);	
 	}
 
 	@Override
 	void draw(Graphics g) {
-//      drew.draw(x, y-35);
-      g.drawImage(drew, x, y-35);
+//	drew.draw(x, y-35);
+		g.drawImage(drew, x, y-35);
 	}
 
 	@Override

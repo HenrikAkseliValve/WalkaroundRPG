@@ -7,24 +7,24 @@ public class BehaviorLookAround extends Behavior {
 	private int allChanges;
 	
 	public BehaviorLookAround(Entity _entity,int changesToTurn){
-	  super(_entity);
-	  allChanges = changesToTurn;
+		super(_entity);
+		allChanges = changesToTurn;
 	}
 	
 	@Override
 	public boolean canBehave(){
-	  return !entity.animationGoingOn;
+		return !entity.animationGoingOn;
 	}
 	
 	@Override
 	public void behaveNow(StateBasedGame game){
-	  int r = random.nextInt(allChanges);
-	  switch(r){
-	  case 1:entity.drew=entity.getAnimation(0);break;
-	  case 2:entity.drew=entity.getAnimation(2);break;
-	  case 3:entity.drew=entity.getAnimation(4);break;
-	  case 4:entity.drew=entity.getAnimation(6);break;
-	  }
+		int r = random.nextInt(allChanges);
+		switch(r){
+		case 1:entity.drew=entity.getAnimation(0);break;
+		case 2:entity.drew=entity.getAnimation(2);break;
+		case 3:entity.drew=entity.getAnimation(4);break;
+		case 4:entity.drew=entity.getAnimation(6);break;
+		}
 	}
 
 }

@@ -7,8 +7,8 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class RoomTitle extends Room{
 	RoomTitle(int ID){
-      super(ID);
-    }
+		super(ID);
+	}
 
 	@Override
 	void RoomPainter(GameContainer Gamec, StateBasedGame game, Graphics g) {

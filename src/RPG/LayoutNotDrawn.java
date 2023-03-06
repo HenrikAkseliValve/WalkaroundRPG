@@ -5,12 +5,12 @@ import org.newdawn.slick.Graphics;
 public class LayoutNotDrawn extends Layout{
 
 	public LayoutNotDrawn(float _x, float _y){
-	  super(_x, _y,0);
+		super(_x, _y,0);
 	}
 
 	@Override
 	public boolean isAlwaysDown() {
-	  return false;
+		return false;
 	}
 
 	@Override
@@ -18,12 +18,12 @@ public class LayoutNotDrawn extends Layout{
 
 	@Override
 	public SpriteSet getSet() {
-	  return null;
+		return null;
 	}
 	
 	@Override
 	public boolean isdrawn(){
-	  return false;
+		return false;
 	}
 
 }
