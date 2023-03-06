@@ -21,7 +21,7 @@ public class RPGmain extends StateBasedGame{
 		System.exit(0);
 	}
 	RPGmain(){
-		super("FunRPG");
+		super("RPG");
 		addState(new RoomTitle(0));
 		addState(new World(3));
 	}
